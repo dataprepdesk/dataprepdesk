@@ -1,0 +1,15 @@
+{
+  "name": "dataprepdesk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first CSV and JSON data quality, cleanup and conversion tools",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test",
+    "check": "node --test && node --check public/assets/workbench.js && node --check public/assets/json-tools.js"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}
